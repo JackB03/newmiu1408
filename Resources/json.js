@@ -159,7 +159,6 @@ myInformation.setData(myInfoSection);
 
 myInformation.addEventListener("click", function(event){
 	getDetail(event.source);
-	// console.log(event.source.title);
 });
 
 
