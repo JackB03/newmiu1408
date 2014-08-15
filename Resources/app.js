@@ -1,5 +1,6 @@
 alert("Welcome to Jack Bonner's 'About Me App'!");
 
+// Main Window
 var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#1C1C1C",
 	barColor: '#1C1C1C',
@@ -13,9 +14,26 @@ var mainWindow = Ti.UI.createWindow({
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
 });
 
+// Navigation Window
 var nav = Titanium.UI.iOS.createNavigationWindow({
-	window: mainWindow,
+	window: mainWindow
 });
 
+
+// Button - to - Questionss
+var questions = Ti.UI.createButton({
+	title: 'About Me'
+});
+
+
+// Adding Questions button
+mainWindow.rightNavButton = questions;
+
+
+
+
+
+
+// Open Nav Window
 nav.open();
 
