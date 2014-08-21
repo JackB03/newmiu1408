@@ -10,7 +10,7 @@ var mainWindow = Ti.UI.createWindow({
 	titleAttributes:  {
         color:'#fff',
         font: {fontFamily:'Roboto', fontSize:24},
-        shadow:{color:'#5959c3', offset:{width:2,height:2}}
+        shadow:{color:'#000', offset:{width:2,height:2}}
    },
 	borderWidth: 1,
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
@@ -47,6 +47,7 @@ var bottomBar = Ti.UI.createLabel({
 	text: "JFL FANTASY FOOTBALL",
 	textAlign: 'center',
 	color: "#fff",
+	font: {fontFamily:'Times', fontSize:23, fontWeight: 'bold'},
 	backgroundColor: "#2E2E2E",
 	bottom: 0,
 	height: 50,
@@ -62,7 +63,7 @@ var openWindow = function(){
 			titleAttributes:  {
 		        color:'#fff',
 		        font: {fontFamily:'Times Roman', fontSize:28},
-		        shadow:{color:'#5959c3', offset:{width:2,height:2}}
+		        shadow:{color:'#000', offset:{width:2,height:2}}
 		   },
 			borderWidth: 1,
 			statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,

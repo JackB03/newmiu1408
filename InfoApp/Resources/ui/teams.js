@@ -4,6 +4,7 @@ var theData = {
 		"information": [
 			{
 				"name": "Dallas Generals",
+				"image": "http://i483.photobucket.com/albums/rr200/JackB03/290140787_zps3449a705.jpg",
 				"career": "CAREER",
 				"lws": 'Longest Win Streak: 5',
 				"tp": 'Total Points: 4,581',
@@ -15,25 +16,92 @@ var theData = {
 				"cw": 'Conference Wins: 5',
 				"pw": 'Playoff Wins: 4',
 				"rating": "TEAM RATING",
-				"star": '',
+				"star": 4,
 				"about": "ABOUT THE OWNER",
 				"ownerInfo": 'The owner, Jack Bonner, has owned this team since the beginning of the league, back in 2010. He is also the League Commissioner. His most successful team was in 2010, when each was allowed to keep 5 players each year. His best pickup, in the draft, was Arian Foster. Foster became the top running back for the year and lead them to the Super Bowl, winning in fashion. Mr. Bonner is still a believer in the old-school ways of having 3 solid running backs.',
 				"history": 'HISTORY OF THE TEAM',
 				"teamInfo": 'Since 2010, the Generals have been the highest scoring team each season. They have reached the Super Bowl twice(2010, 2012) and winning one of them. They are the leader in trophy points and considered one of the best teams ever. They are known for relying on the running backs to win games and score points. In 2013, however, they failed to make it to the playoffs and having a losing season.'
 			},
 			{
-				"name": "The Tune Squad"
+				"name": "The Tune Squad",
+				"image": "http://i483.photobucket.com/albums/rr200/JackB03/IMG_0138_zpsf4bf54e9.jpeg",
+				"career": "CAREER",
+				"lws": 'Longest Win Streak: 5',
+				"tp": 'Total Points: 4,205',
+				"bcf": 'Best Conference Finish: 1st',
+				"bof": 'Best Overall Finish: 1st',
+				"season": 'SINGLE SEASON',
+				"mw": 'Most Wins: 8',
+				"his": 'Highest Score: 156',
+				"cw": 'Conference Wins: 3',
+				"pw": 'Playoff Wins: 6',
+				"rating": "TEAM RATING",
+				"star": 5,
+				"about": "ABOUT THE OWNER",
+				"ownerInfo": 'Robbie DeLeon took over the team in 2012, after the death of long-time owner, Jack H. Bonner, Jr. Since 2012, Mr. DeLeon has taken complete control of the league and had his brightest season in 2013. He won Coach of The Year, Allowed The Fewest Points, won the regular season and the Super Bowl.!',
+				"history": 'HISTORY OF THE TEAM',
+				"teamInfo": 'This team has been to the Super Bowl twice(2011, 2013), winning them both. The team has never had the best of players, but seemed to always pull out the victory. The team is known for picking up the perfect free agents during the season. Since the new owner, the team now has one of the best running backs and wide-receivers in the game.!'
 				
 			},
 			{
-				"name": "Dallas Pirates"
-				
+				"name": "Dallas Pirates",
+				"image": "http://i483.photobucket.com/albums/rr200/JackB03/3ea8802d-f4d9-4d4e-b930-911ce306139e_zps09dda45d.jpg",
+				"career": "CAREER",
+				"lws": 'Longest Win Streak: 4',
+				"tp": 'Total Points: 4,079',
+				"bcf": 'Best Conference Finish: 2nd',
+				"bof": 'Best Overall Finish: 1st',
+				"season": 'SINGLE SEASON',
+				"mw": 'Most Wins: 7',
+				"his": 'Highest Score: 140',
+				"cw": 'Conference Wins: 2',
+				"pw": 'Playoff Wins: 4',
+				"rating": "TEAM RATING",
+				"star": 3,
+				"about": "ABOUT THE OWNER",
+				"ownerInfo": 'Known as the, “Ultimate Owner”, Robert DeLeon has become the most well known owner in the league. He once took over the team, in midseason, and then ended up winning the Super Bowl. Trading is very difficult with him and he only trades when it’s in his favor. He reached the Super Bowl again last season.!',
+				"history": 'HISTORY OF THE TEAM',
+				"teamInfo": 'The Pirates have had a roller coaster of a ride. But recently, they’ve become a very tough team to beat. In 2012, they entered the 1st Round of the playoffs and ended up tying 210-210. But since their opponent’s Quarterback had more points, the Pirates ended their playoff run. It was the closest playoff game in league history. In 2013, the Pirates made it to the Super Bowl again but lost. The game was, again, the closest Super Bowl game in league history!'
 			},
 			{
-				"name": "Texas Cowgirls"
+				"name": "Texas Cowgirls",
+				"image": "http://i483.photobucket.com/albums/rr200/JackB03/txcowgirls_zpsfd77a346.jpg",
+				"career": "CAREER",
+				"lws": 'Longest Win Streak: 4',
+				"tp": 'Total Points: 3,986',
+				"bcf": 'Best Conference Finish: 1st',
+				"bof": 'Best Overall Finish: 1st',
+				"season": 'SINGLE SEASON',
+				"mw": 'Most Wins: 8',
+				"his": 'Highest Score: 151',
+				"cw": 'Conference Wins: 3',
+				"pw": 'Playoff Wins: 3',
+				"rating": "TEAM RATING",
+				"star": 4,
+				"about": "ABOUT THE OWNER",
+				"ownerInfo": 'The wife of Jack Bonner, Valerie Bonner, has been the only female owner for sometime. Not only that, but she has also been to the Super Bowl twice. Her only win, came when she had to face her husband, in 2012. In 2013, she had a rough year, when her young, star running back was injured for the season.!',
+				"history": 'HISTORY OF THE TEAM',
+				"teamInfo": 'The Cowgirls are still a young team compared to most. Yet, they achieved success very quickly. They now have one of the youngest teams in the league and expect to do very well.!'
 			},
 			{
-				"name": "Richardson Cowboys"
+				"name": "Richardson Cowboys",
+				"image": "http://i483.photobucket.com/albums/rr200/JackB03/d77854f1-9b76-4bd6-ada2-c38e9132c6e7_zps3791788a.jpg",
+				"career": "CAREER",
+				"lws": 'Longest Win Streak: 3',
+				"tp": 'Total Points: 3,575',
+				"bcf": 'Best Conference Finish: 2nd',
+				"bof": 'Best Overall Finish: 4th',
+				"season": 'SINGLE SEASON',
+				"mw": 'Most Wins: 6',
+				"his": 'Highest Score: 154',
+				"cw": 'Conference Wins: 4',
+				"pw": 'Playoff Wins: 2',
+				"rating": "TEAM RATING",
+				"star": 4,
+				"about": "ABOUT THE OWNER",
+				"ownerInfo": 'Vinnie Todora took over this team midseason of 2012. The owner quit during the season and the league had to find a new owner. The team was dead last on top of that. He finished the season in last place. In 2013, he again finished last, but made a lot of trades to upgrade his players. After the 2014 draft, his team has never looked better.!',
+				"history": 'HISTORY OF THE TEAM',
+				"teamInfo": 'This team has had so many owners over the years. It has never been to the Super Bowl, but has made it too the 2nd Round of the playoffs before. With the dedicated owner in place, this team is young and improving each year. '
 			},
 		]		
 	}
@@ -65,13 +133,13 @@ var infoSection = Ti.UI.createTableViewSection({
 
 var getDetail = function(dataSource){
 	var detailWindow = Ti.UI.createWindow({
-		backgroundColor: "#2E2E2E",
+		backgroundColor: "#000",
 			title: dataSource.title,
 			barColor: '#1C1C1C',
 			titleAttributes:  {
 		        color:'#fff',
 		        font: {fontFamily:'Times', fontSize:23},
-		        shadow:{color:'#8b8be5', offset:{width:1,height:1}}
+		        shadow:{color:'#000', offset:{width:1,height:1}}
 		   },
 			borderWidth: 1,
 			statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
@@ -86,6 +154,14 @@ var getDetail = function(dataSource){
 			height: 1,
 			top: 1
 	});
+	
+		var teamImage = Ti.UI.createImageView({
+			image: dataSource.img,
+			top: 25,
+			right: 5,
+			height: 125,
+			width: 125
+		});
 	
 		
 		var career = Ti.UI.createLabel({
@@ -192,28 +268,31 @@ var getDetail = function(dataSource){
 			text: dataSource.headingTR,
 			color: "#fff",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
-			top: playoffWins.top + 25,
+			top: playoffWins.top + 30,
 			textAlign: 'center',
 			left: 15
 			
 		});
 		
 		// Team Rating Star
-		var star = Ti.UI.createLabel({
-			text: dataSource.rating,
-			color: "#fff",
-			font: {fontFamily: "helvetica", fontSize: 12, fontStyle: 'italic'},
-			top: teamRating.top + 12,
-			textAlign: 'center',
-			left: 15
-			
+		var rating = Titanium.UI.createProgressBar({
+    		top: teamRating.top + 35,
+    		width: 250,
+    		height: 2,
+    		left: 15,
+    		min:0,
+    		max:5,
+    		value: dataSource.rating,
+    		message: dataSource.rating + " Stars",
+    		color:'red',
+    		style:Titanium.UI.iPhone.ProgressBarStyle.PLAIN,
 		});
 		
 		var aboutOwner = Ti.UI.createLabel({
 			text: dataSource.abo,
 			color: "#fff",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
-			top: star.top + 72,
+			top: rating.top + 50,
 			textAlign: 'center',
 			// left: 15
 			
@@ -267,7 +346,8 @@ var getDetail = function(dataSource){
 	
 	backButton.addEventListener("click", back);
 	
-	detailWindow.add(detailBorder, career, winStreak, totalPoints, bestConference, overall, singleSeason, mostWins, highScore, confWins, playoffWins, teamRating, star, aboutOwner, ownerInfo, historyTeam, teamInfo);
+	detailWindow.add(detailBorder, teamImage, career, winStreak, totalPoints, bestConference, overall, singleSeason, mostWins, highScore, confWins, playoffWins, teamRating, rating, aboutOwner, ownerInfo, historyTeam, teamInfo);
+	rating.show();
 	nav2.open();
 		
 };
@@ -276,6 +356,7 @@ var getDetail = function(dataSource){
 for(var i=0, j=theData.team.information.length; i<j; i++){
 	var theRow = Ti.UI.createTableViewRow({
 		title: theData.team.information[i].name,
+		img: theData.team.information[i].image,
 		headingC: theData.team.information[i].career,
 		longWin: theData.team.information[i].lws,
 		totalP: theData.team.information[i].tp,
