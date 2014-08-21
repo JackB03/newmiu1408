@@ -2,7 +2,6 @@ setTimeout(function(){
 	'use strict';
 
  var startUp = require('/ui/startApp');
-		startApp.StartApp();
+		startUp.StartApp();
 	
-}, 5000);
-    
+}, 1000);
