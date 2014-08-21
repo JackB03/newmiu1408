@@ -66,7 +66,7 @@ var openWindow = function(){
 		   },
 			borderWidth: 1,
 			statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
-			url: "teams.js"
+			url: "/ui/teams.js"
 	});
 	nav.openWindow(newWindow);
 };

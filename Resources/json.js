@@ -1,55 +1,27 @@
-
 // DATA
 var theData = {
-	"personal": {
+	"team": {
 		"information": [
 			{
-				"question": "What is your name?",
-				"answer": "Jack Bonner"
+				"name": "Dallas Generals",
+				"career": "Career:",
+				"lws": 'Longest Win Streak: 5'
 			},
 			{
-				"question": "What is your chat user name?",
+				"question": "The Tune Squad",
 				"answer": "I use iMessage. The apple ID I use is 'jackb03@fullsail.edu'"
 			},
 			{
-				"question": "What is your time zone?",
+				"question": "Dallas Pirates",
 				"answer": "Central Standard Time"
 			},
 			{
-				"question": "Why are you in the MDP?",
+				"question": "Texas Cowgirls",
 				"answer": "I always had a passion for web development and fell in love with the iPhone in 2007. Combine them together and you have mobile development. I want to learn everything there is about coding."
 			},
 			{
-				"question": "Comfortable with Javascript?",
+				"question": "Richardson Cowboys",
 				"answer": "I thought I was doing well, but I still struggle a lot. Frameworks of coding and navigation windows seem to be my biggest issues."
-			},
-			{
-				"question": "Comfortable with Titanium?",
-				"answer": "I'm very comfortable with Titanium. Titanium is interesting, but looking at some of the other software, it's not as good. But I like how easy it makes things for the developers."
-			},
-			{
-				"question": "Favorite sports player?",
-				"answer": "Peyton Manning. I named my son after him. He is probably the best player to ever play QB in NFL history. On top of that, he is a great person and role model. "
-			},
-			{
-				"question": "Favorite sport?",
-				"answer": "It depends on which time of the year it is. NFL is my favorite when NFL starts up. Soccer is my favorite when EPL league starts. And my favorite is baseball when my son is playing."
-			},
-			{
-				"question": "Do you have a family?",
-				"answer": "I have a wife of 10 years and 3 kids. "
-			},
-			{
-				"question": "Where do you live?",
-				"answer": "Rockwall, Tx. Smallest county in Texas and used to be 'country'. But not now. It has grown so much, especially since it's right by a major lake in North Texas."
-			},
-			{
-				"question": "Favorite TV show?",
-				"answer": "Game Of Thrones. Suits is pretty good as well."
-			},
-			{
-				"question": "What work do you do?",
-				"answer": "Full-time student. I'm lucky enough to have a wife that makes enough money to allow me to go back to school."
 			},
 		]		
 	}
@@ -104,17 +76,23 @@ var getDetail = function(dataSource){
 	});
 	
 		
-		var theAnswers = Ti.UI.createLabel({
-			text: dataSource.desc,
+		var career = Ti.UI.createLabel({
+			text: dataSource.headingC,
 			color: "#fff",
-			font: {fontFamily: "helvetica", fontSize: 22, fontStyle: 'italic'},
-			shadowColor: '#000',
-			shadowOffset: {x:1, y:1},
-			shadowRadius: 2,
+			font: {fontFamily: "helvetica", fontSize: 22, fontStyle: 'underline'},
 			top: detailBorder.top + detailBorder.height + 75,
 			textAlign: 'center',
-			left: 15,
-			right: 15
+			left: 15
+			
+		});
+		
+		var winStreak = Ti.UI.createLabel({
+			text: dataSource.longWin,
+			color: "#fff",
+			font: {fontFamily: "helvetica", fontSize: 22, fontStyle: 'underline'},
+			top: career.top + 5,
+			textAlign: 'center',
+			left: 15
 			
 		});
 		
@@ -134,16 +112,17 @@ var getDetail = function(dataSource){
 	
 	backButton.addEventListener("click", back);
 	
-	detailWindow.add(detailBorder, theAnswers);
+	detailWindow.add(detailBorder, career, winStreak);
 	nav2.open();
 		
 };
 
 
-for(var i=0, j=theData.personal.information.length; i<j; i++){
+for(var i=0, j=theData.team.information.length; i<j; i++){
 	var theRow = Ti.UI.createTableViewRow({
-		title: theData.personal.information[i].question,
-		desc: theData.personal.information[i].answer,
+		title: theData.team.information[i].name,
+		headingC: theData.team.information[i].career,
+		longWin: theData.team.information[i].lws,
 		hasChild: true,
 		backgroundColor: '#e8e8e8e',
 		color: '#fff'
