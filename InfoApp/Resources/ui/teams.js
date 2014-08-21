@@ -171,7 +171,7 @@ var getDetail = function(dataSource){
 		
 		var career = Ti.UI.createLabel({
 			text: dataSource.headingC,
-			color: "#fff",
+			color: "#848484",
 			font: {fontFamily: "helvetica", fontSize: 18, fontWeight: 'bold'},
 			top: detailBorder.top + detailBorder.height + 15,
 			textAlign: 'center',
@@ -222,7 +222,7 @@ var getDetail = function(dataSource){
 		
 		var singleSeason = Ti.UI.createLabel({
 			text: dataSource.headingS,
-			color: "#fff",
+			color: "#848484",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
 			top: overall.top + 22,
 			textAlign: 'center',
@@ -272,7 +272,7 @@ var getDetail = function(dataSource){
 		
 		var teamRating = Ti.UI.createLabel({
 			text: dataSource.headingTR,
-			color: "#fff",
+			color: "#848484",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
 			top: playoffWins.top + 30,
 			textAlign: 'center',
@@ -319,7 +319,7 @@ var getDetail = function(dataSource){
 		
 		var aboutOwner = Ti.UI.createLabel({
 			text: dataSource.abo,
-			color: "#fff",
+			color: "#848484",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
 			top: slider.top + 50,
 			textAlign: 'center',
@@ -340,7 +340,7 @@ var getDetail = function(dataSource){
 		
 		var historyTeam = Ti.UI.createLabel({
 			text: dataSource.hott,
-			color: "#fff",
+			color: "#848484",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
 			top: ownerInfo.top + 102,
 			textAlign: 'center',
@@ -376,6 +376,7 @@ var getDetail = function(dataSource){
 	
 	// Button Functions
 	var moreWindow = function(){
+		alert("Loading Please Wait...");
 		var newWindow = Ti.UI.createWindow({
 			backgroundColor: "#000",
 			title: 'More',
@@ -433,7 +434,7 @@ for(var i=0, j=theData.team.information.length; i<j; i++){
 		hottInfo: theData.team.information[i].teamInfo,
 		hasChild: true,
 		backgroundColor: '#e8e8e8e',
-		color: '#fff'
+		color: '#000'
 	});
 	
 	infoSection.add(theRow);
