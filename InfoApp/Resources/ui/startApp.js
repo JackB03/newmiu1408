@@ -9,7 +9,7 @@ var mainWindow = Ti.UI.createWindow({
 	title: "Home",
 	titleAttributes:  {
         color:'#fff',
-        font: {fontFamily:'Roboto', fontSize:24},
+        font: {fontFamily:'Roboto', fontSize:23},
         shadow:{color:'#000', offset:{width:2,height:2}}
    },
 	borderWidth: 1,
@@ -62,7 +62,7 @@ var openWindow = function(){
 			barColor: '#1C1C1C',
 			titleAttributes:  {
 		        color:'#fff',
-		        font: {fontFamily:'Times Roman', fontSize:28},
+		        font: {fontFamily:'Times Roman', fontSize:23},
 		        shadow:{color:'#000', offset:{width:2,height:2}}
 		   },
 			borderWidth: 1,

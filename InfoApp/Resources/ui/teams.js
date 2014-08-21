@@ -62,7 +62,8 @@ var theData = {
 				"about": "ABOUT THE OWNER",
 				"ownerInfo": 'Known as the, “Ultimate Owner”, Robert DeLeon has become the most well known owner in the league. He once took over the team, in midseason, and then ended up winning the Super Bowl. Trading is very difficult with him and he only trades when it’s in his favor. He reached the Super Bowl again last season!',
 				"history": 'HISTORY OF THE TEAM',
-				"teamInfo": 'The Pirates have had a roller coaster of a ride. But recently, they’ve become a very tough team to beat. In 2012, they entered the 1st Round of the playoffs and ended up tying 210-210. But since their opponent’s Quarterback had more points, the Pirates ended their playoff run. It was the closest playoff game in league history. In 2013, the Pirates made it to the Super Bowl again but lost. The game was, again, the closest Super Bowl game in league history!'
+				"teamInfo": 'The Pirates have had a roller coaster of a ride. But recently, they’ve become a very tough team to beat. In 2012, they entered the 1st Round of the playoffs and ended up tying 210-210. But since their opponent’s Quarterback had more points, the Pirates ended their playoff run. It was the closest playoff game in league history. In 2013, the Pirates made it to the Super Bowl again but lost. The game was, again, the closest Super Bowl game in league history!',
+				"more": "/moreTeam/DPmore.js"
 			},
 			{
 				"name": "Texas Cowgirls",
@@ -82,7 +83,8 @@ var theData = {
 				"about": "ABOUT THE OWNER",
 				"ownerInfo": 'The wife of Jack Bonner, Valerie Bonner, has been the only female owner for sometime. Not only that, but she has also been to the Super Bowl twice. Her only win, came when she had to face her husband, in 2012. In 2013, she had a rough year, when her young, star running back was injured for the season.!',
 				"history": 'HISTORY OF THE TEAM',
-				"teamInfo": 'The Cowgirls are still a young team compared to most. Yet, they achieved success very quickly. They now have one of the youngest teams in the league and expect to do very well.!'
+				"teamInfo": 'The Cowgirls are still a young team compared to most. Yet, they achieved success very quickly. They now have one of the youngest teams in the league and expect to do very well.!',
+				"more": "/moreTeam/TCmore.js"
 			},
 			{
 				"name": "Richardson Cowboys",
@@ -102,7 +104,8 @@ var theData = {
 				"about": "ABOUT THE OWNER",
 				"ownerInfo": 'Vinnie Todora took over this team midseason of 2012. The owner quit during the season and the league had to find a new owner. The team was dead last on top of that. He finished the season in last place. In 2013, he again finished last, but made a lot of trades to upgrade his players. After the 2014 draft, his team has never looked better.!',
 				"history": 'HISTORY OF THE TEAM',
-				"teamInfo": 'This team has had so many owners over the years. It has never been to the Super Bowl, but has made it too the 2nd Round of the playoffs before. With the dedicated owner in place, this team is young and improving each year. '
+				"teamInfo": 'This team has had so many owners over the years. It has never been to the Super Bowl, but has made it too the 2nd Round of the playoffs before. With the dedicated owner in place, this team is young and improving each year.',
+				"more": "/moreTeam/RCmore.js"
 			},
 		]		
 	}
@@ -379,7 +382,7 @@ var getDetail = function(dataSource){
 			barColor: '#1C1C1C',
 			titleAttributes:  {
 		        color:'#fff',
-		        font: {fontFamily:'Times Roman', fontSize:24},
+		        font: {fontFamily:'Times Roman', fontSize:23},
 		        shadow:{color:'#000', offset:{width:2,height:2}}
 		   },
 			borderWidth: 1,

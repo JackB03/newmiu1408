@@ -1,5 +1,5 @@
 
-var DGMoreWindow = Ti.UI.currentWindow;
+var DPMoreWindow = Ti.UI.currentWindow;
 
 var moreBorder = Ti.UI.createView({
 	backgroundColor: '#A4A4A4',
@@ -21,16 +21,16 @@ var rosterHeader = Ti.UI.createLabel({
 
 // Roster Table
 var sectionQB = Ti.UI.createTableViewSection({ headerTitle: 'Quarterback'});
-sectionQB.add(Ti.UI.createTableViewRow({ title: 'Drew Brees', backgroundColor: '#585858', color:"#fff"}));
+sectionQB.add(Ti.UI.createTableViewRow({ title: 'Mathew Stafford', backgroundColor: '#585858', color:"#fff"}));
 
 var sectionRB = Ti.UI.createTableViewSection({ headerTitle: 'Running Back' });
-sectionRB.add(Ti.UI.createTableViewRow({ title: 'Adrian Peterson', backgroundColor: '#585858', color:"#fff" }));
+sectionRB.add(Ti.UI.createTableViewRow({ title: 'Marshawn Lynch', backgroundColor: '#585858', color:"#fff" }));
 
 var sectionWR = Ti.UI.createTableViewSection({ headerTitle: 'Wide Receiver' });
-sectionWR.add(Ti.UI.createTableViewRow({ title: 'Antonio Brown', backgroundColor: '#585858', color:"#fff" }));
+sectionWR.add(Ti.UI.createTableViewRow({ title: 'Demaryius Thomas', backgroundColor: '#585858', color:"#fff" }));
 
 var sectionTE = Ti.UI.createTableViewSection({ headerTitle: 'Tight End' });
-sectionTE.add(Ti.UI.createTableViewRow({ title: 'Jimmy Graham', backgroundColor: '#585858', color:"#fff" }));
+sectionTE.add(Ti.UI.createTableViewRow({ title: 'Rob Gronkowski', backgroundColor: '#585858', color:"#fff" }));
 
 
 var table = Ti.UI.createTableView({
@@ -60,7 +60,7 @@ var Map = require('ti.map');
 
 var mapview = Map.createView({
     mapType: Map.HYBRID_TYPE,
-    region: {latitude:32.916798, longitude:-96.446621},
+    region: {latitude:32.747722, longitude:-97.092615}, 
     animate:true,
     regionFit:true,
     height: 100,
@@ -72,11 +72,11 @@ var mapview = Map.createView({
 
 // Team Song
 var player = Ti.Media.createSound({
-	url:"http://api.soundcloud.com/tracks/42555226/stream?client_id=20e3de80e29b918c89e5000a8489cc27", 
+	url:"http://www.ultimateflagfootballleague.com/media/Ted_Nugent_-_Strangle_Hold_1_.mp3", 
 	volume: 0.1
 	});
 player.play();
 
 
 
-DGMoreWindow.add(moreBorder, rosterHeader, table, locationHeader, mapview);
+DPMoreWindow.add(moreBorder, rosterHeader, table, locationHeader, mapview);
