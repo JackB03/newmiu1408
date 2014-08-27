@@ -18,7 +18,7 @@ var theData = {
 				"rating": "RATE THIS TEAM",
 				// "star": 4,
 				"about": "ABOUT THE OWNER",
-				"ownerInfo": 'The owner, Jack Bonner, has owned this team since the beginning of the league, back in 2010. He is also the League Commissioner. His most successful team was in 2010, when each was allowed to keep 5 players each year. His best pickup, in the draft, was Arian Foster. Foster became the top running back for the year and lead them to the Super Bowl, winning in fashion. Mr. Bonner is still a believer in the old-school ways of having 3 solid running backs.',
+				"ownerInfo": 'The owner, Jack Bonner, has owned this team since the beginning of the league, back in 2010. He is also the League Commissioner. His most successful team was in 2010, when he picked up Arian Foster. Foster became the top running back for the year and lead them to the Super Bowl, winning in fashion. Mr. Bonner is still a believer in the old-school ways of having 3 solid running backs.',
 				"history": 'HISTORY OF THE TEAM',
 				"teamInfo": 'Since 2010, the Generals have been the highest scoring team each season. They have reached the Super Bowl twice(2010, 2012) and winning one of them. They are the leader in trophy points and considered one of the best teams ever. They are known for relying on the running backs to win games and score points. In 2013, however, they failed to make it to the playoffs and having a losing season.',
 				"more": "/moreTeam/DGmore.js"
@@ -81,9 +81,9 @@ var theData = {
 				"rating": "RATE THIS TEAM",
 				// "star": 4,
 				"about": "ABOUT THE OWNER",
-				"ownerInfo": 'The wife of Jack Bonner, Valerie Bonner, has been the only female owner for sometime. Not only that, but she has also been to the Super Bowl twice. Her only win, came when she had to face her husband, in 2012. In 2013, she had a rough year, when her young, star running back was injured for the season.!',
+				"ownerInfo": 'The wife of Jack Bonner, Valerie Bonner, has been the only female owner for sometime. Not only that, but she has also been to the Super Bowl twice. Her only win, came when she had to face her husband, in 2012. In 2013, she had a rough year, when her young, star running back was injured for the season!',
 				"history": 'HISTORY OF THE TEAM',
-				"teamInfo": 'The Cowgirls are still a young team compared to most. Yet, they achieved success very quickly. They now have one of the youngest teams in the league and expect to do very well.!',
+				"teamInfo": 'The Cowgirls are still a young team compared to most. Yet, they achieved success very quickly. They now have one of the youngest teams in the league and expect to do very well! Making it to two super bowl should should you what this team is all about!',
 				"more": "/moreTeam/TCmore.js"
 			},
 			{
@@ -102,7 +102,7 @@ var theData = {
 				"rating": "RATE THIS TEAM",
 				// "star": 4,
 				"about": "ABOUT THE OWNER",
-				"ownerInfo": 'Vinnie Todora took over this team midseason of 2012. The owner quit during the season and the league had to find a new owner. The team was dead last on top of that. He finished the season in last place. In 2013, he again finished last, but made a lot of trades to upgrade his players. After the 2014 draft, his team has never looked better.!',
+				"ownerInfo": 'Vinnie Todora took over this team midseason of 2012. The owner quit during the season and the league had to find a new owner. The team was dead last on top of that. He finished the season in last place. In 2013, he again finished last, but made a lot of trades to upgrade his players. After the 2014 draft, his team has never looked better!',
 				"history": 'HISTORY OF THE TEAM',
 				"teamInfo": 'This team has had so many owners over the years. It has never been to the Super Bowl, but has made it too the 2nd Round of the playoffs before. With the dedicated owner in place, this team is young and improving each year.',
 				"more": "/moreTeam/RCmore.js"
@@ -119,10 +119,13 @@ var dataBorder = Ti.UI.createView({
 	height: 1,
 	top: 1
 });
-		
+
+
+
 var myInformation = Ti.UI.createTableView({
 	top: dataBorder.height + dataBorder.top,
-	backgroundColor: "#000"
+	backgroundColor: "#000",
+	
 });
 
 
@@ -330,7 +333,7 @@ var getDetail = function(dataSource){
 		var ownerInfo = Ti.UI.createLabel({
 			text: dataSource.aboInfo,
 			color: "#fff",
-			font: {fontFamily: "helvetica", fontSize: 10, fontStyle: 'italic'},
+			font: {fontFamily: "helvetica", fontSize: 11, fontStyle: 'italic'},
 			top: aboutOwner.top + 19,
 			textAlign: 'center',
 			left: 10,
@@ -342,7 +345,7 @@ var getDetail = function(dataSource){
 			text: dataSource.hott,
 			color: "#848484",
 			font: {fontFamily: "helvetica", fontSize: 18, fontStyle: 'italic'},
-			top: ownerInfo.top + 102,
+			top: ownerInfo.top + 101,
 			textAlign: 'center',
 			// left: 15
 			
@@ -351,7 +354,7 @@ var getDetail = function(dataSource){
 		var teamInfo = Ti.UI.createLabel({
 			text: dataSource.hottInfo,
 			color: "#fff",
-			font: {fontFamily: "helvetica", fontSize: 10, fontStyle: 'italic'},
+			font: {fontFamily: "helvetica", fontSize: 11, fontStyle: 'italic'},
 			top: historyTeam.top + 19,
 			textAlign: 'center',
 			left: 10,

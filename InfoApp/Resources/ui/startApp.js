@@ -34,9 +34,9 @@ mainWindow.rightNavButton = teams;
 
 // Main Screen Image
 var homeImage = Ti.UI.createImageView({
-	image: "/images/JFLlogo_zps2ddf3b49.png",
+	image: "/images/JFLlogo.png",
 	top: 75,
-	width: 200,
+	width: 250,
 	height: 250
 	
 });

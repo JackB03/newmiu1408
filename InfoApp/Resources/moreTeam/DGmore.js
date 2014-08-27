@@ -7,6 +7,8 @@ var moreBorder = Ti.UI.createView({
 	top: 1
 });
 
+
+
 var rosterHeader = Ti.UI.createLabel({
 	text: "STAR PLAYERS",
 	color: "#B40404",
@@ -23,6 +25,7 @@ var rosterHeader = Ti.UI.createLabel({
 var sectionQB = Ti.UI.createTableViewSection({ headerTitle: 'Quarterback'});
 sectionQB.add(Ti.UI.createTableViewRow({ title: 'Drew Brees', backgroundColor: '#585858', color:"#fff"}));
 
+
 var sectionRB = Ti.UI.createTableViewSection({ headerTitle: 'Running Back' });
 sectionRB.add(Ti.UI.createTableViewRow({ title: 'Adrian Peterson', backgroundColor: '#585858', color:"#fff" }));
 
@@ -36,7 +39,8 @@ sectionTE.add(Ti.UI.createTableViewRow({ title: 'Jimmy Graham', backgroundColor:
 var table = Ti.UI.createTableView({
   data: [sectionQB, sectionRB, sectionWR, sectionTE],
   height: 267,
-  top: rosterHeader.top + rosterHeader.height + 0
+  top: rosterHeader.top + rosterHeader.height + 0,
+  
 });
 
 
@@ -71,11 +75,11 @@ var mapview = Map.createView({
 
 
 // Team Song
-var player = Ti.Media.createSound({
-	url:"http://api.soundcloud.com/tracks/42555226/stream?client_id=20e3de80e29b918c89e5000a8489cc27", 
-	volume: 0.1
-	});
-player.play();
+// var player = Ti.Media.createSound({
+	// url:"http://api.soundcloud.com/tracks/42555226/stream?client_id=20e3de80e29b918c89e5000a8489cc27", 
+	// volume: 0.1
+	// });
+// player.play();
 
 
 
