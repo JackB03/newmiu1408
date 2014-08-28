@@ -71,7 +71,7 @@ var dateTextField = Titanium.UI.createTextField({
 	returnKeyType:Titanium.UI.RETURNKEY_DONE,
 	suppressReturn: true,
     borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
-    hintText: 'mm/dd/year',
+    hintText: "Today's Date",
     top: lastTextField.top + lastTextField.height + 25,
     left: 15,
     width: 150, height : 35,
