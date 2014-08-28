@@ -17,7 +17,7 @@ var title = Ti.UI.createLabel({
 	color:'#fff',
 	font: {fontFamily:'Georgia', fontSize:23, fontWeight: 'bold'},
 	shadowColor: '#000',
-	shadowOffset: {x:2, y:2},
+	shadowOffset: {x:5, y:5},
   	shadowRadius: 3,
 	textAlign:'center'
 });
@@ -152,12 +152,25 @@ function startHome(){
 }
 
 
+// Go to Joined Teams Page
+function startTeams(){
+	var teamWin = Ti.UI.createWindow({
+	backgroundColor:'#1C1C1C',
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	url:"/ui/teams.js"
+});
+
+teamWin.open();
+
+}
+
+
 // ***************
 // Event Listeners
 // ***************
 
 homeButton.addEventListener("click", startHome);
-
+joinedTeams.addEventListener("click", startTeams);
 
 
 

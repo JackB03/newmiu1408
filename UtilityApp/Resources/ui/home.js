@@ -27,7 +27,7 @@ title = Ti.UI.createLabel({
 	color:'#fff',
 	font: {fontFamily:'Georgia', fontSize:23, fontWeight: 'bold'},
 	shadowColor: '#000',
-	shadowOffset: {x:2, y:2},
+	shadowOffset: {x:5, y:5},
   	shadowRadius: 3,
 	textAlign:'center'
 });
