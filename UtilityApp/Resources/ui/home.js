@@ -51,7 +51,7 @@ mainImage = Ti.UI.createImageView({
 // Welcome Title
 welcome = Ti.UI.createLabel({
 	text: "Welcome To The JFL",
-	top:100,
+	top:120,
 	width:'100%',
 	height:50,
 	textAlign: 'center',

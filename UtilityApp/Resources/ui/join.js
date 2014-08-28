@@ -34,83 +34,101 @@ var joinedTeams = Ti.UI.createButton({
 	right: 15
 });
 
+// ************
+// Text Fields
+// ************
 
+// First Name
+var firstTextField = Titanium.UI.createTextField({
+	backgroundColor:'#fff',
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+    hintText: 'First Name',
+    top: 120,
+    left: 15,
+    width: 120, height : 35,
+    autocorrect: true
+});
 
-// DROP DOWN MENU
-var img = Ti.UI.createImageView({
-    image : "http://png-5.findicons.com/files//icons/2198/dark_glass/128/1downarrow.png",
-    height : 20,
-    width  :20,
-    right : 0
+// Last Name
+var lastTextField = Titanium.UI.createTextField({
+	backgroundColor:'#fff',
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+    hintText: 'Last Name',
+    top: 120,
+    right: 15,
+    width: 150, height : 35,
+    autocorrect: true
 });
 
 
-var selectedItem = Ti.UI.createLabel({
-    text: "Select Date",
-    color:"#000",
-    font: {fontFamily:'Times', fontSize:12},
-    width : 80,
-    height : 35,
-    top : 0
+// DATE Text Field
+var dateTextField = Titanium.UI.createTextField({
+	backgroundColor:'#fff',
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+    hintText: 'mm/dd/year',
+    top: lastTextField.top + lastTextField.height + 25,
+    left: 15,
+    width: 150, height : 35,
+    autocorrect: true
 });
- 
-var viewMenu = Ti.UI.createView({
-    borderWidth : 1,
-    borderColor : "blue",
-    height : 35,
-    width : 150,
-    top : 150,
-    left:15,
-    backgroundColor:'#fff'
-});
-viewMenu.addEventListener('click',function(e){
-    viewContainer.show();
-});
- 
-viewMenu.add(img);
-viewMenu.add(selectedItem);
- 
-var arr = ["9/1/2014","9/2/2014","9/3/2014","9/4/2014","9/5/2014","9/6/2014"];
- 
-var viewContainer = Ti.UI.createScrollView({
-    height : 150,
-    width : 100,
-    contentHeight : "auto",
-    contentWidth : Ti.UI.SIZE,
-    top : 185,
-    left:15,
-    visible : false,
-    borderColor : "gray",
-    layout : "vertical",
-});
- 
-for (i=0;i<arr.length;i++){
-    var item = Ti.UI.createLabel({
-        text : arr[i],
-        height : 20,
-        width : 100,
-        color:'#fff'
-    });
-    item.addEventListener('click',function(e){
-        viewMenu.children[1].text=this.text;
-        viewContainer.hide();
-    });
-    viewContainer.add(item);
-}
- 
-currentWindow.add(viewMenu);
-currentWindow.add(viewContainer);
-// End OF Drop Down Menu
 
 
+// Email Text Field
+var emailTextField = Titanium.UI.createTextField({
+	backgroundColor:'#fff',
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+    hintText: 'E-Mail',
+    top: dateTextField.top + dateTextField.height + 25,
+    left: 15,
+    width: 290, height : 35,
+    autocorrect: true
+});
+
+
+// User Team Name
+var teamTextField = Titanium.UI.createTextField({
+	backgroundColor:'#fff',
+	returnKeyType:Titanium.UI.RETURNKEY_DONE,
+	suppressReturn: true,
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+    hintText: 'Team Name',
+    top: emailTextField.top + emailTextField.height + 25,
+    left: 15,
+    width: 290, height : 35,
+    autocorrect: true
+});
 
 
 // *****************
-// BUTTONS
+//     BUTTONS
 // *****************
+
+// Send Button
+var sendButton = Ti.UI.createLabel({
+	text: "SEND",
+	top:teamTextField.top + teamTextField.height + 35,
+	left:35,
+	right: 35, 
+	height:45,
+	textAlign: 'center',
+	color: "#000",
+	font: {fontFamily:'Georgia', fontSize:18, fontWeight: 'bold'},
+	backgroundColor: "#31B404",  
+	opacity:1.0,
+	borderColor:'#fff'
+});
+
 
 // Home Button
-homeButton = Ti.UI.createLabel({
+var homeButton = Ti.UI.createLabel({
 	text: "HOME",
 	bottom:0,
 	left:0,
@@ -125,7 +143,7 @@ homeButton = Ti.UI.createLabel({
 });
 
 // Join Button
-joinButton = Ti.UI.createLabel({
+var joinButton = Ti.UI.createLabel({
 	text: "JOIN",
 	bottom:0,
 	right:0,
@@ -138,6 +156,8 @@ joinButton = Ti.UI.createLabel({
 	opacity:0.9,
 	borderColor:'#fff'
 });
+
+
 
 
 // *****************
@@ -165,12 +185,54 @@ teamWin.open();
 }
 
 
+
 // ***************
 // Event Listeners
 // ***************
 
+// Send Button EL -- Added Control and Confirmations for the User! 
+sendButton.addEventListener('click', function(e){
+  var dialog = Ti.UI.createAlertDialog({
+    cancel: 1,
+    buttonNames: ['Cancel', 'Confirm'],
+    message: 'Would You Like To Submit Your Team?',
+    title: 'Submit'
+  });
+  dialog.addEventListener('click', function(e){
+    if (e.index === e.source.cancel){
+    	alert('Thank You! Your Team Has Been Submitted For Review.');
+    } else {
+      var cancelDialog = Ti.UI.createAlertDialog({
+    		cancel: 1,
+   			buttonNames: ['Yes', 'No'],
+   	 		message: 'Are you sure you want cancel your submission?',
+    		title: 'Cancel Submission'
+  		});
+  		cancelDialog.addEventListener('click', function(e){
+    if (e.index === e.source.cancel){
+      alert('Please Submit Your Team');
+    } else {
+    	alert("You Have Cancelled Your Submission");
+    } 
+    
+  });
+  cancelDialog.show();
+  }
+  
+  });
+  dialog.show();
+});
+// End Of Send Button EL
+
+
+
+// Home Button Event Listener
 homeButton.addEventListener("click", startHome);
+
+
+// Joined Teams Event Listener
 joinedTeams.addEventListener("click", startTeams);
+
 
 
 
@@ -180,4 +242,4 @@ joinedTeams.addEventListener("click", startTeams);
 // ADD TO WINDOW
 // ********************
 
-currentWindow.add(header, title, joinedTeams, homeButton, joinButton);
+currentWindow.add(header, title, joinedTeams, firstTextField, lastTextField, dateTextField, emailTextField, teamTextField, sendButton, homeButton, joinButton);
