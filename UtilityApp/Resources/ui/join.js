@@ -27,6 +27,16 @@ var title = Ti.UI.createLabel({
 // MAIN BODY
 // ********************
 
+// Right Nav Button
+var joinedTeams = Ti.UI.createButton({
+	title: 'Teams',
+	top:30,
+	right: 15
+});
+
+
+
+// DROP DOWN MENU
 var img = Ti.UI.createImageView({
     image : "http://png-5.findicons.com/files//icons/2198/dark_glass/128/1downarrow.png",
     height : 20,
@@ -90,6 +100,9 @@ for (i=0;i<arr.length;i++){
  
 currentWindow.add(viewMenu);
 currentWindow.add(viewContainer);
+// End OF Drop Down Menu
+
+
 
 
 // *****************
@@ -154,4 +167,4 @@ homeButton.addEventListener("click", startHome);
 // ADD TO WINDOW
 // ********************
 
-currentWindow.add(header, title, homeButton, joinButton);
+currentWindow.add(header, title, joinedTeams, homeButton, joinButton);
