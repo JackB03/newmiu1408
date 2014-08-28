@@ -1,15 +1,37 @@
 function startHome(){
 
 // Global Variables
-var mainWin, mainImage, welcome, mainText, homeButton, joinButton;
+var mainWin, header, title, mainImage, welcome, mainText, homeButton, joinButton;
 
 // Main Window
 mainWin = Ti.UI.createWindow({
 	backgroundColor:'#1C1C1C',
-	barColor: '#0B0B61',
-	title: "The JFL",
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
 });
+
+
+
+header = Ti.UI.createLabel({
+	top:0,
+	height:20,
+	width:'100%',
+	backgroundColor:'#0B0B61'
+});
+
+title = Ti.UI.createLabel({
+	top:header.top + header.height + 0,
+	height:45,
+	width:'100%',
+	backgroundColor:'#0B0B61',
+	text: "The JFL",
+	color:'#fff',
+	font: {fontFamily:'Georgia', fontSize:23, fontWeight: 'bold'},
+	shadowColor: '#000',
+	shadowOffset: {x:2, y:2},
+  	shadowRadius: 3,
+	textAlign:'center'
+});
+
 
 
 
@@ -20,7 +42,7 @@ mainWin = Ti.UI.createWindow({
 // Background Image
 mainImage = Ti.UI.createImageView({
 	image:'/images/JFLlogo.png',
-	top:0,
+	top:title.top + title.height + 0,
 	height: Titanium.UI.FILL,
 	width:'100%',
 	opacity:1.0
@@ -102,8 +124,6 @@ function startJoin(){
 // Join Main Window
 var newWin = Ti.UI.createWindow({
 	backgroundColor:'#1C1C1C',
-	barColor: '#0B0B61',
-	title: "Join",
 	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
 	url:"/ui/join.js"
 });
@@ -123,7 +143,7 @@ joinButton.addEventListener("click", startJoin);
 
 // ADD
 // mainImage.add(buttonBar);
-mainWin.add(mainImage, welcome, mainText, homeButton, joinButton);
+mainWin.add(header, title, mainImage, welcome, mainText, homeButton, joinButton);
 
 // Open Window
 mainWin.open();
